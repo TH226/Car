@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#eeecec"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/return_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/cxz_common_navi_button_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/return_home"
+            android:text="车服商城"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/car_book_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:text="我的订单"
+            android:textColor="@color/colorbottomlight"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:layout_marginTop="10dp"
+        android:id="@+id/gv_car_sevice"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:numColumns="4"
+        android:verticalSpacing="10dp"
+        ></GridView>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#afff"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_service_return_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/cxz_common_navi_button_back" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_service_return_home"
+            android:text="汽车服务"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="#aadedddd"
+        android:textSize="14sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线预约"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_yuyue"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <ImageView
+            android:id="@+id/iv_yuyue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/poi_auto_licai"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:id="@+id/tv_yuyue"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_yuyue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线预约"
+            android:textSize="14sp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:layout_below="@+id/tv_yuyue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一键预约，尊享快速服务通道"
+            android:textColor="#a000"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="#aadedddd"
+        android:textSize="14sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周边服务"
+            android:layout_marginLeft="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>

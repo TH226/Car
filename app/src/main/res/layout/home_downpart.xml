@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginBottom="15px"
+    android:layout_marginLeft="15px"
+    android:layout_marginRight="15px"
+    android:layout_marginTop="15px"
+    android:layout_weight="1"
+    android:background="#e4e3e3"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_car_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/tv_recruit_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="top"
+                android:text="车服商城"
+                android:textColor="#a000"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/iv_recruit_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/tv_recruit_time"
+                android:scaleType="fitXY"
+                android:src="@mipmap/cxz_common_waiting_01" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="7px"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_today_job"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/tv_home_partdown_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="今日任务"
+                    android:textColor="#a000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_home_work1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_home_partdown_text2"
+                    android:text="0  /"
+                    android:textColor="#a000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_home_work2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/tv_home_work1"
+                    android:text="13"
+                    android:textColor="#a000"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/tv_home_work2"
+                    android:src="@mipmap/home_icon_task" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="7px" />
+
+            <RelativeLayout
+                android:id="@+id/rl_now_jifen"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/tv_home_partdown_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="当前积分 5"
+                    android:textColor="#a000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10px" />
+
+    <LinearLayout
+        android:id="@+id/ll_activity_heart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:background="#fff"
+        android:clickable="true">
+
+        <LinearLayout
+            android:id="@+id/ll_home_car_service"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@mipmap/home_icon_service" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="汽车服务"
+                android:textColor="#a000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="7px"
+            android:layout_height="match_parent"
+            android:background="#e4e3e3" />
+
+        <LinearLayout
+            android:id="@+id/ll_car_friend"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@mipmap/home_icon_friend" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="车友互动"
+                android:textColor="#a000"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="7px"
+            android:layout_height="match_parent"
+            android:background="#e4e3e3" />
+
+        <LinearLayout
+            android:id="@+id/ll_news"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@mipmap/home_icon_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:text="消息提醒"
+                android:textColor="#a000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="7px"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>

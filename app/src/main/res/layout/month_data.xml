@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorbottomlight">
+
+        <ImageView
+            android:id="@+id/week_time_down"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@mipmap/icon_bigarrowleft" />
+
+        <TextView
+            android:id="@+id/week_time"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2016-10"
+            android:textColor="#afff"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/week_time_up"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_bigarrowright" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorline">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorline"
+            android:orientation="vertical">
+
+            <include layout="@layout/month_data_top"></include>
+
+            <include layout="@layout/month_data_down"></include>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
